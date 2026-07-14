@@ -194,12 +194,12 @@ def Performance_Diagram(experiments,pods,fars,PD_Fig_Title):
     cb.ax.tick_params(labelsize=16)
 
     ax.set_xlim(min(srs)-0.05,min(max(srs)+0.05,1))
-    ax.set_ylim(min(pods)-0.05,min(max(pods)+0.05,1))
+    ax.set_ylim(min(pods)-0.1,min(max(pods)+0.05,1))
 
     ax.set_xlabel('Success Ratio (1-FAR)',fontsize=20)
     ax.set_ylabel('Probability of Detection (POD)',fontsize=20)
     ax.tick_params(labelsize=16)
-    ax.set_title('a) UH02 Performance Diagram',fontsize=28)
+    ax.set_title(f'{PD_Fig_Title[-4:]} Performance Diagram',fontsize=28)
 
     ax.grid(color='k',linestyle='--',alpha=0.5)
 
