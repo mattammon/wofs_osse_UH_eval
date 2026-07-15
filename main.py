@@ -63,7 +63,7 @@ def main(exp, swt_var, ENS_DIR, NR_DIR,
 
     # Slicing the full nature run arrays (Note: +1 to make slice inclusive of bounds)
     uh_nr_trim = uh_nr_full[lat1:lat2+1, lon1:lon2+1]
-    uh_nr_trim = gaussian_filter(uh_nr_trim, sigma=2, mode='nearest')
+    uh_nr_trim = gaussian_filter(uh_nr_trim, sigma=3, mode='nearest')
     lat_nr_trim = lat_nr_full[lat1:lat2+1, lon1:lon2+1]
     lon_nr_trim = lon_nr_full[lat1:lat2+1, lon1:lon2+1]
 

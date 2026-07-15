@@ -6,7 +6,7 @@ from main import main, Performance_Diagram
 date = '20250314'
 
 experiments = ['SfcRad', 'SfcRad_UAS', 'SfcRad_150UAS',
-               'SfcRad_150UAS_XLV', 'SfcRad_75UAS', 'SfcRad_20UAS', 'SfcRad_20UAS_XLV']
+               'SfcRad_150UAS_XLV', 'SfcRad_75UAS', 'SfcRad_75UAS_XLV', 'SfcRad_20UAS', 'SfcRad_20UAS_XLV']
 
 # experiments = ['SfcRad', 'SfcRad_UAS', 'SfcRad_20UAS','SfcRad_20UAS_largeH', 'SfcRad_20UAS_largeV',
 #                'SfcRad_20UAS_midH', 'SfcRad_20UAS_midHlargeV', 'SfcRad_20UAS_smHlgV',
@@ -21,9 +21,9 @@ experiments = ['SfcRad', 'SfcRad_UAS', 'SfcRad_150UAS',
 variable = 'UH25'
 params = {
     'NUM_MEMBERS':18,
-    'PERCENTILE_THRESH':95.0,
-    'NEIGHBORHOOD_RADIUS':5,
-    'SMOOTHING_SIGMA':2
+    'PERCENTILE_THRESH':99.0,
+    'NEIGHBORHOOD_RADIUS':9,
+    'SMOOTHING_SIGMA':3
 }
 title = f'{date}_NUM-SITES_{variable}'
 ##################################
